@@ -1,0 +1,198 @@
+/* font-family: 'Anton', sans-serif; */
+
+body{
+    margin:0;
+    padding:0;  
+}
+
+.container{
+    height: 880px;
+    position: relative;
+    
+}
+
+
+.background{
+    height: 100%;
+    width: 100%;
+    background-image: url(bg-2.jpg);
+    /*background-attachment: fixed;*/
+    filter: brightness(40%);
+    position: absolute;
+    
+   
+}
+
+
+.nav{
+    height: 45px;
+    text-align: center;
+    padding: 10px; 
+    position: relative;
+    
+}
+
+.nav__ul{
+    display: inline-block; 
+}
+
+.hair-logo{
+    padding: 0%;
+    margin: 0%;
+    height: 42px;
+    width: 42px;
+    
+    
+}
+
+.nav__li{
+    display: inline-block;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.nav a:hover{
+    color: #c29500;
+}
+
+.nav b{
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+
+
+.box{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.box h4{
+    font-family:'Anton', sans-serif;
+    color: #c29500;
+    font-weight: lighter;
+    margin: 0px;
+}
+
+.box h1{
+    font-family:'Anton', sans-serif;
+    color: #ffffff;
+    font-size: 120px;
+    margin: 0px;
+    font-weight: initial;
+}
+
+.box input{
+    background: none;
+    color: #c29550;
+    border-color: #c29550;
+    height: 48px;
+    width: 130px;
+    border-style: solid;
+    font-family: 'Anton', sans-serif;
+    font-size: larger;
+}
+
+.welcome{
+    height: 450px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.for-men{
+    display: inline-block;
+    text-align: center;
+}
+
+.for-men__background{
+        height: 450px;
+        width: 720px;
+        background-image: url(formen.jpg);
+        filter: brightness(60%);
+        background-size: cover;
+        position: absolute;
+}
+
+.for-men__text{
+    text-align: center;
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 112px;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 23px;
+}
+
+.for-men__border{
+    position: relative;
+}
+
+.for-men__border input{
+    background: none;
+    color: #c29550;
+    border-color: #c29550;
+    height: 359px;
+    width: 565px;
+    border-style: solid;
+    font-family: 'Anton', sans-serif;
+    font-size: larger;
+    margin-left: 62px;
+    margin-top: 57px;
+}
+
+
+
+.salon{
+    display: inline-block;
+    height: 720px;
+    text-align: center;
+    margin-left: 105px;
+    margin-top: 54px;
+    position: absolute;
+    width: 400px;
+    
+}
+
+.salon img{
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+}
+
+.salon hr{
+    color: #dbb06f85;
+    height: 2px;
+    background-color: #dbb06f85;
+    border: none;
+}
+
+.salon input{
+    background: none;
+    color: #c29550;
+    border-color: #c29550;
+    height: 49px;
+    width: 144px;
+    border-style: solid;
+    font-family: 'Anton', sans-serif;
+}
+
+
+.for-woman{
+    display: inline-block;
+}
+
+
+.nav__responsive-ul{
+    display: none;
+}
+
