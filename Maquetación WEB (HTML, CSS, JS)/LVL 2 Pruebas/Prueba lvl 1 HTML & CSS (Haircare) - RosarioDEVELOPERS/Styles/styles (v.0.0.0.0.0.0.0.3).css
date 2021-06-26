@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f5f2ea;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    
+}
+li{
+    list-style: none;
+    margin-right: 15px;
+    font-family: 'Anton', sans-serif;
+}
+header{
+    height: 877px;
+}
+.nav-container{
+    display: flex;
+    width: 70%;
+    max-width: 1280px;
+    margin: auto;
+    justify-content: space-around;
+    position: relative;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 51px;
+    height: 51px;
+    padding: 0%;
+    margin-right: 4px;
+    filter: invert(100%);
+}
+.logo p{
+    color:#fff;
+    font-family: 'Anton', sans-serif;
+    font-size: 17px;
+}
+nav ul li a{
+    color: #fff;
+}
+nav ul li a:hover{
+    color: #be915b;
+
+}
+.background{
+    background: url(Styles/Recursos/bg-2.jpg);
+    background-position: top;
+    width: 100%;
+    height: 877px;
+    filter: brightness(40%);
+    position: absolute;
+}
+.welcome{
+    position: relative;
+    text-align: center;
+    margin-top: 10%;
+}
+.welcome h1{
+    font-family:'Anton', sans-serif;
+    color: #ffffff;
+    font-size: 100px;
+    margin-top: 0px;
+}
+.welcome h4{
+    font-family:'Anton', sans-serif;
+    color: #be915b;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+.welcome a{
+    text-decoration: none;
+    color: #be915b;
+    border: 3px solid #be915b;
+    padding: 12px 30px 12px 30px;
+    transition: 0.4s;
+}
+.welcome a:hover{
+    background: #be915b;
+    color: #fff;
+    transition: 0.4s;
+}
