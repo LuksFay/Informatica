@@ -58,31 +58,31 @@ nav ul li a:hover{
     filter: brightness(40%);
     position: absolute;
 }
-.welcome{
+.banner{
     position: relative;
     text-align: center;
     margin-top: 10%;
 }
-.welcome h1{
+.banner h1{
     font-family:'Anton', sans-serif;
     color: #ffffff;
     font-size: 100px;
     margin-top: 0px;
 }
-.welcome h4{
+.banner h4{
     font-family:'Anton', sans-serif;
     color: #be915b;
     font-weight: lighter;
     margin-bottom: 0;
 }
-.welcome a{
+.banner a{
     text-decoration: none;
     color: #be915b;
     border: 3px solid #be915b;
     padding: 12px 30px 12px 30px;
     transition: 0.4s;
 }
-.welcome a:hover{
+.banner a:hover{
     background: #be915b;
     color: #fff;
     transition: 0.4s;
