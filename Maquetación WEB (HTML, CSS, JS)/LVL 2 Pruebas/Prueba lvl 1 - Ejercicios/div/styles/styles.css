@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    
+}
+.rojo{
+    max-width: 50%;
+    height: 440px;
+    background-color: rgb(218, 17, 141);  
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+}
+.otro{
+    max-width: 20%;
+    height: 500px;
+    background-color: rgb(61, 27, 184);
+    flex: 1;
+}
+.azul{
+    max-width: 50%;
+    height: 500px;
+    background-color: rgb(22, 196, 88);
+    flex: 1;
+}
