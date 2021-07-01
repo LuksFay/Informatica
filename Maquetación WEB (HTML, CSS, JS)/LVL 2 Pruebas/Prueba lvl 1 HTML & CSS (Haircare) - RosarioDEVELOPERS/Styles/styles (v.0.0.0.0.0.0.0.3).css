@@ -1,3 +1,6 @@
+*{
+    user-select: none;
+}
 html {
     scroll-behavior: smooth;
   }
@@ -101,20 +104,71 @@ nav ul li a:hover{
 }
 .for{
     display: flex;
+    width: 100%;
+    height: 571px;
 }
 .for-{
-    width: 719px;
+    width: 100%;
     height: 571px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-.c2 img{
-    width: 78px;
-    height: 78px;
+.for-us{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.for-us img{
+    height: 80px;
+    width: 80px;
+}
+.for-us h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 1.5rem;
+}
+.for-us h4{
+    font-family: 'Inter', sans-serif;
+    color: #292827;
+    font-weight: 1;
+}
+.for-us hr{
+    width: 395px;
+    color: #bf925b;
+    height: 2px;
+    background-color: #bf925b;
+    border: 0px;
+}
+.for-us p{
+    color:#9c9283;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    padding: 1.5rem;
+    line-height: 2rem;
+    margin: 0px 60px;
+    text-align: center;
+}
+.for-us a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 3px solid #be915b;
+    color:#be915b;
+    transition: 0.4s;
+}
+.for-us a:hover{
+    background: #be915b;
+    color: #fff;
+    transition: 0.4s;
+}
+
 .fm_img{
     background: url(Recursos/formen.jpg);
     width: 719px;
@@ -139,28 +193,27 @@ nav ul li a:hover{
     border: 2px solid  rgba(191, 146, 91, 1);
     display: flex;
     flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 490px;
+    height: 490px;
 }
 .a p{
     color: #fff;
     margin-top: 0;
     padding-top: 50%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
 }
 .a a{
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 1rem;
-    padding: 0.5rem;
+    font-size: 0.8rem;
     color: rgba(191, 146, 91, 1);
+    transition: 0.4s;
 }
-.text{
-    color:#9c9283
+.a a:hover{
+    color: #fff;
+    transition: 0.4s;
 }
-.for-us img{
-    height: 80px;
-    width: 80px;
-}
+
