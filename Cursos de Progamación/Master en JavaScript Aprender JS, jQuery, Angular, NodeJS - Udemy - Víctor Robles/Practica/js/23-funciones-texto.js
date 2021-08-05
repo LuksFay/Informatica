@@ -1,8 +1,10 @@
 'use strict'
 // transformacion de texto
 var numero = 444;
-var texto1 = "Bienvenidos al curso de JavaScript de Victor Robles";
+var texto1 = " Bienvenidos al curso de JavaScript de Victor Robles ";
 var texto2 = "es muy buen curso";
+
+
 
 var dato = numero.toString(); // de esta manera cualquier variable se transofrma en string
 var dato2 = texto1.toUpperCase(); // de esta manera cualquier variable se transforma en texto mayuscula
@@ -44,5 +46,19 @@ console.log(busqueda6);
 
 var busqueda7 = texto1.startsWith("Lucas"); // indica si el string comienza con lo indicado dentro del parametro, otra opcin se endsWith
 console.log(busqueda7);
+
 var busqueda8 = texto1.includes("curso"); // indica si el string comienza con lo indicado dentro del parametro, otra opcin se endsWith
 console.log(busqueda8);
+
+var busqueda9 = texto1.replace("curso","aula"); // reemplaza la palabra indicada
+console.log(busqueda9);
+
+var busqueda10 = texto1.slice(15, 23); // corta el string y solo muestra a partir de el caracter indicado en el primer parametro hasta el final del mismo o hasta el caracter indicado en el segundo parametro
+console.log(busqueda10);
+
+var busqueda11 = texto1.split("e"); // toma la variable y la coloca dentro de un string, y tomara el parametro indicado como separador y los dividira en elementos dentro del array. No tomara el separador indicado como un objeto existente dentro del array.
+console.log(busqueda11);
+
+var busqueda12 = texto1.trim(); //elimina los espacios en blanco del string seleccionado
+console.log(busqueda12);
+//LOS BUSCACORES SOY KEYSENSITIVE
