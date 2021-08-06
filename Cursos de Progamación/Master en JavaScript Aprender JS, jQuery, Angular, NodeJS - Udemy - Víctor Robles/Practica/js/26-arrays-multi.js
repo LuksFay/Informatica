@@ -5,7 +5,7 @@ var peliculas = ["La verdad duele", "La vida es bella", "Gran torino"];
 
 var cine = [ categorias, peliculas];
 
-peliculas.sort();
+peliculas.sort(); // ordena 
 console.log(peliculas)
 peliculas.reverse();
 console.log(peliculas)

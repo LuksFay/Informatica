@@ -47,7 +47,7 @@ console.log(busqueda6);
 var busqueda7 = texto1.startsWith("Lucas"); // indica si el string comienza con lo indicado dentro del parametro, otra opcin se endsWith
 console.log(busqueda7);
 
-var busqueda8 = texto1.includes("curso"); // indica si el string comienza con lo indicado dentro del parametro, otra opcin se endsWith
+var busqueda8 = texto1.includes("curso"); // indica si el string contiene lo indicado dentro del parametroh
 console.log(busqueda8);
 
 var busqueda9 = texto1.replace("curso","aula"); // reemplaza la palabra indicada
