@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/resources/favicon-white-32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Vue.js</title>
+</head>
+<body>
+  
+    <div id="app" class="container mt-5">
+
+            <div :class="['p-3', 'text-white', fondo]">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore veritatis rerum sequi ullam, explicabo nisi, quo corporis quis consectetur nam ut modi fugit, deserunt dolorem at atque delectus aspernatur neque?
+                </p>
+            </div>
+            <input type="text" class="form-control my-3" v-model="fondo">
+            
+            <div class="text-white p-3" :class="{'bg-info' : color, 'bg-success' : !color }">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quaerat molestiae iure quia culpa amet, eum sunt modi maxime ipsum dolorem. Quae excepturi voluptatum expedita molestiae temporibus, cumque debitis dolorum.
+                </p>
+            </div>
+            <button  class="btn btn-primary" @click="color = !color">Cambiar</button>
+    </div>
+
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="assets/javascript/02.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

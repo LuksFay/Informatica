@@ -1,6 +1,6 @@
 'use strict'
 
-//  Un API REST es un servicio o un backend que nos devuelve datos en json, peude recibir peticiones por POST, PUT, DELETE, esos son metodos HTTP  (protocolo de transferencia de hipertexto / hypertext transfer protocol)
+//  Un API REST es un servicio o un backend que nos devuelve datos en json, peude recibir peticiones por GET, POST, PUT, DELETE, esos son metodos HTTP  (protocolo de transferencia de hipertexto / hypertext transfer protocol)
 // un API recibe una informacion y devuelve otra en JSON. Guarda y saca datos en una BaseData. es el uso que normalmente se le da a una api
 //Fetch es un sustituto de AJAX, basicamente un metodo que hac peticiones AJAX, peticiones asincronas a un servidor
 // JSON placeholder || reqres contiene datos de prueba 
@@ -63,9 +63,9 @@ var div_janet = document.querySelector('#janet');
     }
 
 
-    //todo lo que esta en esta funcin antes estaba adentro del fetch
+    //todo lo que esta en esta funcion antes estaba adentro del fetch
 
-    function listadoUsuarios(usuarios) {
+    function listadoUsuarios(usuarios) { //users.data
         usuarios.map((user,i) => {
             console.log(user);
            let nombre = document.createElement('h3');
