@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuex</title>
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex@3.6.2/dist/vuex.js"></script>
+
+</head>
+<body>
+    <div id="app">
+        <titulo></titulo>
+    </div> 
+    <script>
+        Vue.component('titulo',{
+            template: //html 
+            `
+            <div>
+                <h1>numero <!--{{$store.state.numero}}--> {{numero}}</h1>     
+                <hijo></hijo>
+            </div>
+            `,
+            computed:{
+                // numero(){
+                //     return store.state.numero
+                // }
+                ...Vuex.mapState(['numero'])
+            }
+            // a Store se lo llama con $  cuando esta dentro de un template
+        });
+        Vue.component('hijo',{
+            template: //html
+            `
+            <div>
+                <button @click="aumentar">+</button> 
+                <button @click="disminuir(2)">-</button>   <!--antes esto estaba entre la comillas "$store.commit('aumentar')"-->
+                <h1>numero <!--{{$store.state.numero}}--> {{numero}}</h1>
+            </div>
+            `,
+            computed:{
+                ...Vuex.mapState(['numero'])
+            },
+            methods:{
+                ...Vuex.mapMutations(['aumentar', 'disminuir'])
+            }
+        });
+
+
+
+        const store = new Vuex.Store({
+            state:{
+                numero: 10
+            },
+            mutations:{
+                // aumentar(){
+                //     this.state.numero++
+                // }
+                // o
+                aumentar(state){
+                    state.numero++
+                },
+                disminuir(state, n){
+                    state.numero-=n
+                }
+            }
+        });
+
+
+        new Vue({
+            el: '#app',
+            store
+        })
+    </script>
+    
+</body>
+</html>

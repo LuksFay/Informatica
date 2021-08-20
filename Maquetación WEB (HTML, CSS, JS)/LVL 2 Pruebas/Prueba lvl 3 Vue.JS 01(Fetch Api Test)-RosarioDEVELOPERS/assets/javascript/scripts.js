@@ -9,7 +9,7 @@ const app = new Vue({
         .then(res=>{
             let data = res.data.data;
             this.usersData = data;
-            console.log(data);
+            // console.log(data[0].avatar);
         })},
     },
     created(){

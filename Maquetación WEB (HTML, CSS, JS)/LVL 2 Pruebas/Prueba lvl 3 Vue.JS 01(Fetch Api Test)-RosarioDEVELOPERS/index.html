@@ -10,14 +10,18 @@
     <title>Fetch Api Test</title>
 </head>
 <body>
-    <div id="app" class="container d-flex justify-content-center ">
-        <div v-for="user in usersData" class="card d-flex align-items-center">
-            <div class="card-img-top" :id="user.avatar">
+    <div id="app" class="container d-flex justify-content-center lign-items-center">
+        <div v-for="user in usersData" class="card d-flex align-items-center text-center">
+           
+            <div class="card-img-top d-flex justify-content-center">
+                <img :src="user.avatar" alt="" class="rounded-circle" >
             </div>
             <div class="card-body">
                 <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
                 <p class="card-text">{{user.email}}</p>
-                <button class="btn btn-primary">+ Add Friend</button>
+                <button class="btn btn-primary">
+                     +Add Friend
+                </button>
             </div>
         </div>
     </div>
