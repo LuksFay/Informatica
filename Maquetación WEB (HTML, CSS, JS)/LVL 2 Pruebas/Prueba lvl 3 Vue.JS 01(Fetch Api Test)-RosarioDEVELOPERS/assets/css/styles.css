@@ -1,0 +1,11 @@
+.card{
+    flex-basis: 30%;
+}
+.card p{
+    font-size: 0.8em;
+    color: #595959;
+}
+.container{
+    gap: 25px;
+    flex-flow:wrap
+}
