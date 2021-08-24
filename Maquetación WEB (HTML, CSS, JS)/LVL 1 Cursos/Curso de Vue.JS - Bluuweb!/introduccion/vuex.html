@@ -37,14 +37,19 @@
             <div>
                 <button @click="aumentar">+</button> 
                 <button @click="disminuir(2)">-</button>   <!--antes esto estaba entre la comillas "$store.commit('aumentar')"-->
+                <button @click="obtenerCursos">Obtener Cursos</button> 
                 <h1>numero <!--{{$store.state.numero}}--> {{numero}}</h1>
+                <ul v-for= "item of cursos">
+                    <li>{{item.nombre}}</li>
+                </ul>    
             </div>
             `,
             computed:{
-                ...Vuex.mapState(['numero'])
+                ...Vuex.mapState(['numero', 'cursos'])
             },
             methods:{
-                ...Vuex.mapMutations(['aumentar', 'disminuir'])
+                ...Vuex.mapMutations(['aumentar', 'disminuir']),
+                ...Vuex.mapActions(['obtenerCursos'])
             }
         });
 
@@ -52,7 +57,8 @@
 
         const store = new Vuex.Store({
             state:{
-                numero: 10
+                numero: 10,
+                cursos: []
             },
             mutations:{
                 // aumentar(){
@@ -64,6 +70,19 @@
                 },
                 disminuir(state, n){
                     state.numero-=n
+                },
+                llenarCursos(state, cursosAccion){
+                    state.cursos = cursosAccion   //hace referencia al array vacio
+                }
+            },
+            actions:{
+                obtenerCursos: async function ({commit}){
+                    const data = await fetch ('cursos.json');
+                    const cursos = await data.json();
+                    commit('llenarCursos', cursos)
+
+                    //¿Qué estamos haciendo aca? Dentro de las acciones (actions), nosotros estamos llamando a una API que esta consumiendo {cursos} que vienen en formato {json}. Todos esos cursos se guardan en un [array] llamado [cursos] DENTRO de esta acción (actions), luego, hacemos un commit('') el cual  va a llamar a llenarCursos() que es nuestra mutación (mutations) que recibe un segundo paramentro que son los {cursos}. 
+                    //La mutacion (mutations) que es llenarCursos() va a tomar nuestro estado (state) [cursos] que en este caso está vacío y lo va a llenar con el segundo parametro que son los cursosAccion, o sea todo lo que viene de action (actions). [cursos](state) ya no va a estar vacío sino que va a ser todo lo que venga desde el API. Por eso se usan actions, mutations y states. asi funciona VueX
                 }
             }
         });

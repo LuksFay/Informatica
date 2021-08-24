@@ -17,3 +17,23 @@ const app = new Vue({
     }
     
 })
+
+Vue.component('usuarios',{
+    template: //html
+    `
+    <div>
+        <div class="card-img-top d-flex justify-content-center">
+            <img :src="user.avatar" alt="" class="rounded-circle" >
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">{{user.first_name}} {{user.last_name}}</h5>
+            <p class="card-text">{{user.email}}</p>
+            <button class="btn btn-primary">
+                +Add Friend
+            </button>
+        </div>
+    </div>
+    `,
+    props:["user"]
+
+})
